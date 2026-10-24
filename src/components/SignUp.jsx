@@ -5,8 +5,9 @@ import blossomImage from '../assets/blossom-flower.svg';
 function SignUp() {
   return (
     <div className={styles.container}>
-      {/* Left Section - Empty for now */}
-      <div className={styles.leftSection}></div>
+      <div className={styles.leftSection}>
+        <h1 className={styles.title}>Get Started Now</h1>
+    </div>
 
       {/* Right Section - Image Display */}
       <div className={styles.rightSection}>
