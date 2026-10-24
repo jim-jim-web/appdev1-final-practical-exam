@@ -14,7 +14,7 @@ function Login() {
           <h1 className={styles.title}>Welcome back!</h1>
           <p className={styles.subtitle}>Enter your Credentials to access your account</p>
 
-          {/* Part 2: Login Form */}
+          {/* Part 2: Form */}
           <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
             <div className={styles.formGroup}>
               <label htmlFor="email">Email address</label>
@@ -47,7 +47,7 @@ function Login() {
             </button>
           </form>
 
-          {/* Part 3: Divider & Social Sign-In */}
+          {/* Part 3: Divider, Social Buttons, and Updated Bottom Text */}
           <div className={styles.divider}>
             <span>Or</span>
           </div>
@@ -64,7 +64,7 @@ function Login() {
           </div>
 
           <p className={styles.bottomText}>
-            Have an account? <a href="#">Sign In</a>
+            Don’t have an account? <a href="#">Sign Up</a>
           </p>
         </div>
       </div>
