@@ -14,32 +14,40 @@ function Login() {
           <h1 className={styles.title}>Welcome back!</h1>
           <p className={styles.subtitle}>Enter your Credentials to access your account</p>
 
+          {/* Part 2: Login Form */}
           <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
             <div className={styles.formGroup}>
-              <label htmlFor="name">Name</label>
-              <input type="text" id="name" placeholder="Enter your name" />
-            </div>
-
-            <div className={styles.formGroup}>
               <label htmlFor="email">Email address</label>
-              <input type="email" id="email" placeholder="Enter your email" />
+              <input 
+                type="email" 
+                id="email" 
+                placeholder="Enter your email" 
+              />
             </div>
 
             <div className={styles.formGroup}>
-              <label htmlFor="password">Password</label>
-              <input type="password" id="password" placeholder="Name" />
+              <div className={styles.passwordHeader}>
+                <label htmlFor="password">Password</label>
+                <a href="#" className={styles.forgotLink}>Forgot password</a>
+              </div>
+              <input 
+                type="password" 
+                id="password" 
+                placeholder="Password" 
+              />
             </div>
 
             <div className={styles.checkboxGroup}>
-              <input type="checkbox" id="terms" />
-              <label htmlFor="terms">I agree to the terms & policy</label>
+              <input type="checkbox" id="remember" />
+              <label htmlFor="remember">Remember for 30 days</label>
             </div>
 
             <button type="submit" className={styles.submitBtn}>
-              Signup
+              Login
             </button>
           </form>
 
+          {/* Part 3: Divider & Social Sign-In */}
           <div className={styles.divider}>
             <span>Or</span>
           </div>

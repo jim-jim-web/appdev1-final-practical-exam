@@ -16,7 +16,7 @@
 .formContainer {
   width: 100%;
   max-width: 360px;
-  text-align: left; /* Left aligns all text inside the container */
+  text-align: left;
 }
 
 .rightSection {
@@ -33,7 +33,6 @@
   object-fit: contain;
 }
 
-/* Title & Subtitle Styling */
 .title {
   font-size: 28px;
   font-weight: 700;
@@ -69,6 +68,20 @@
   text-align: left;
 }
 
+/* Header layout for Password Label + Forgot Password link */
+.passwordHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgotLink {
+  font-size: 11px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 .formGroup input {
   padding: 10px 14px;
   border: 1px solid #e5e7eb;
@@ -77,31 +90,30 @@
   outline: none;
   width: 100%;
   box-sizing: border-box;
-  background-color: #ffffff; /* dark background */
-  color: #ffffff;            /* text typed inside input */
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .formGroup input::placeholder {
-  color: #d1d5db;
+  color: #9ca3af;
 }
 
 .checkboxGroup {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 12px;
+  font-size: 11px;
   color: #000000;
   font-weight: 500;
   margin-top: 4px;
   text-align: left;
 }
 
-/* Custom styling for the white checkbox */
 .checkboxGroup input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   background-color: #ffffff;
   border: 1px solid #d1d5db;
   border-radius: 4px;
