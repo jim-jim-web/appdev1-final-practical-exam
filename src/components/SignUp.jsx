@@ -51,7 +51,7 @@ function SignUp() {
             </button>
           </form>
 
-          {/* Part 3: Divider & Social Sign-In */}
+          {/* Divider & Social Sign-In */}
           <div className={styles.divider}>
             <span>Or</span>
           </div>

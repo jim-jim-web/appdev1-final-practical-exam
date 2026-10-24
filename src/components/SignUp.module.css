@@ -16,6 +16,7 @@
 .formContainer {
   width: 100%;
   max-width: 360px;
+  text-align: left; /* Left-aligns header and contents */
 }
 
 .rightSection {
@@ -37,6 +38,7 @@
   font-weight: 700;
   color: #000000;
   margin-bottom: 24px;
+  text-align: left;
 }
 
 .form {
@@ -56,6 +58,7 @@
   font-size: 12px;
   font-weight: 600;
   color: #000000;
+  text-align: left;
 }
 
 .formGroup input {
@@ -66,26 +69,51 @@
   outline: none;
   width: 100%;
   box-sizing: border-box;
+  background-color: #ffffff; /* Dark background matching image */
+  color: #000000;            /* Black text when typing */
 }
 
+/* White placeholder text */
 .formGroup input::placeholder {
-  color: #d1d5db;
+  color: #e5e7eb;
+  opacity: 0.8;
 }
 
+/* Custom white checkbox styling */
 .checkboxGroup {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   font-size: 11px;
   color: #000000;
   font-weight: 500;
-  margin-top: 2px;
+  margin-top: 4px;
+  text-align: left;
 }
 
 .checkboxGroup input[type="checkbox"] {
-  width: 13px;
-  height: 13px;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
   cursor: pointer;
+  display: grid;
+  place-content: center;
+}
+
+.checkboxGroup input[type="checkbox"]:checked {
+  background-color: #ffffff;
+  border-color: #3b5b28;
+}
+
+.checkboxGroup input[type="checkbox"]:checked::before {
+  content: "✔";
+  font-size: 10px;
+  color: #3b5b28;
+  font-weight: bold;
 }
 
 .submitBtn {
@@ -101,7 +129,6 @@
   width: 100%;
 }
 
-/* Part 3 Styles */
 .divider {
   display: flex;
   align-items: center;
