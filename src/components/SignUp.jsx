@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './SignUp.module.css';
 import blossomImage from '../assets/blossom-flower.svg';
+import googleIcon from '../assets/icons-google-logo.svg';
+import appleIcon from '../assets/icons-apple-logo.svg';
 
 function SignUp() {
   return (
@@ -10,7 +12,7 @@ function SignUp() {
         <div className={styles.formContainer}>
           <h1 className={styles.title}>Get Started Now</h1>
 
-          {/* Form Part */}
+          {/* Form */}
           <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
             <div className={styles.formGroup}>
               <label htmlFor="name">Name</label>
@@ -48,6 +50,26 @@ function SignUp() {
               Signup
             </button>
           </form>
+
+          {/* Part 3: Divider & Social Sign-In */}
+          <div className={styles.divider}>
+            <span>Or</span>
+          </div>
+
+          <div className={styles.socialButtons}>
+            <button type="button" className={styles.socialBtn}>
+              <img src={googleIcon} alt="Google logo" />
+              <span>Sign in with Google</span>
+            </button>
+            <button type="button" className={styles.socialBtn}>
+              <img src={appleIcon} alt="Apple logo" />
+              <span>Sign in with Apple</span>
+            </button>
+          </div>
+
+          <p className={styles.bottomText}>
+            Have an account? <a href="#">Sign In</a>
+          </p>
         </div>
       </div>
 
