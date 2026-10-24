@@ -2,7 +2,8 @@
   display: flex;
   min-height: 100vh;
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--color-bg-primary);
+  font-family: var(--font-family-base);
 }
 
 .leftSection {
@@ -15,8 +16,8 @@
 
 .formContainer {
   width: 100%;
-  max-width: 360px;
-  text-align: left; /* Left-aligns header and contents */
+  max-width: var(--spacing-container-max);
+  text-align: left;
 }
 
 .rightSection {
@@ -34,9 +35,9 @@
 }
 
 .title {
-  font-size: 28px;
-  font-weight: 700;
-  color: #000000;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-main);
   margin-bottom: 24px;
   text-align: left;
 }
@@ -55,38 +56,35 @@
 }
 
 .formGroup label {
-  font-size: 12px;
-  font-weight: 600;
-  color: #000000;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-main);
   text-align: left;
 }
 
 .formGroup input {
   padding: 10px 14px;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  font-size: 12px;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--border-radius-card);
+  font-size: var(--font-size-sm);
   outline: none;
   width: 100%;
   box-sizing: border-box;
-  background-color: #ffffff; /* Dark background matching image */
-  color: #000000;            /* Black text when typing */
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-main);
 }
 
-/* White placeholder text */
 .formGroup input::placeholder {
-  color: #e5e7eb;
-  opacity: 0.8;
+  color: var(--color-text-placeholder);
 }
 
-/* Custom white checkbox styling */
 .checkboxGroup {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 11px;
-  color: #000000;
-  font-weight: 500;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-main);
+  font-weight: var(--font-weight-normal);
   margin-top: 4px;
   text-align: left;
 }
@@ -96,35 +94,35 @@
   -webkit-appearance: none;
   width: 15px;
   height: 15px;
-  background-color: #ffffff;
-  border: 1px solid #d1d5db;
-  border-radius: 4px;
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border-checkbox);
+  border-radius: var(--border-radius-checkbox);
   cursor: pointer;
   display: grid;
   place-content: center;
 }
 
 .checkboxGroup input[type="checkbox"]:checked {
-  background-color: #ffffff;
-  border-color: #3b5b28;
+  background-color: var(--color-bg-primary);
+  border-color: var(--color-primary-green);
 }
 
 .checkboxGroup input[type="checkbox"]:checked::before {
   content: "✔";
   font-size: 10px;
-  color: #3b5b28;
+  color: var(--color-primary-green);
   font-weight: bold;
 }
 
 .submitBtn {
   margin-top: 8px;
   padding: 11px 16px;
-  background-color: #3b5b28;
-  color: #ffffff;
+  background-color: var(--color-primary-green);
+  color: var(--color-bg-primary);
   border: none;
-  border-radius: 8px;
-  font-size: 13px;
-  font-weight: 600;
+  border-radius: var(--border-radius-card);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
   cursor: pointer;
   width: 100%;
 }
@@ -141,13 +139,13 @@
 .divider::after {
   content: '';
   flex: 1;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--color-border-light);
 }
 
 .divider span {
   padding: 0 10px;
-  color: #9ca3af;
-  font-size: 11px;
+  color: var(--color-text-placeholder);
+  font-size: var(--font-size-xs);
 }
 
 .socialButtons {
@@ -163,12 +161,12 @@
   justify-content: center;
   gap: 6px;
   padding: 8px 10px;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  background-color: #ffffff;
-  font-size: 11px;
-  font-weight: 500;
-  color: #000000;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--border-radius-card);
+  background-color: var(--color-bg-primary);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-text-main);
   cursor: pointer;
 }
 
@@ -180,13 +178,13 @@
 .bottomText {
   text-align: center;
   margin-top: 20px;
-  font-size: 12px;
-  color: #000000;
-  font-weight: 500;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-main);
+  font-weight: var(--font-weight-normal);
 }
 
 .bottomText a {
-  color: #2563eb;
-  font-weight: 600;
+  color: var(--color-link-blue);
+  font-weight: var(--font-weight-semibold);
   text-decoration: none;
 }
