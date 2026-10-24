@@ -2,34 +2,101 @@
   display: flex;
   min-height: 100vh;
   width: 100%;
+  background-color: #ffffff;
 }
 
 .leftSection {
   flex: 1;
-  padding: 40px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  padding: 40px;
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 360px;
 }
 
 .rightSection {
   flex: 1;
-  background-color: #f3f4f6;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  padding: 20px;
 }
 
 .blossomImg {
-  max-width: 80%;
+  max-width: 85%;
   height: auto;
   object-fit: contain;
 }
 
 .title {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   color: #000000;
   margin-bottom: 28px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formGroup label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.formGroup input {
+  padding: 10px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 12px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formGroup input::placeholder {
+  color: #d1d5db;
+}
+
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #000000;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.checkboxGroup input[type="checkbox"] {
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+}
+
+.submitBtn {
+  margin-top: 10px;
+  padding: 11px 16px;
+  background-color: #3b5b28;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
 }
